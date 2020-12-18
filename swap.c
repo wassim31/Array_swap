@@ -36,23 +36,23 @@ int main(void)
     }
     // first array values ended
     printf("\nArray 2 is : \n");
-    for(i = 0 ; i < 4 ; i++)
+    for(i = 0 ; i < len ; i++)
     {
         printf("%d ", array1[i]);
     }
     // second array values ended
     printf("\n\t\tWe switch their values\n");
     // pass argument to function change();
-    change(array0, array1, 4);
+    change(array0, array1, len);
     // first array new values ended
     printf("New Array 1 is : \n");
-    for(i = 0 ; i < 4 ; i++)
+    for(i = 0 ; i < len  ; i++)
     {
         printf("%d ", array0[i]);
     }
     // second array new values ended
     printf("\nNew Array 2 is : \n");
-    for(i = 0 ; i < 4 ; i++)
+    for(i = 0 ; i < len ; i++)
     {
         printf("%d ", array1[i]);
     }
