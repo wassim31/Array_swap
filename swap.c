@@ -9,7 +9,7 @@ int main(void)
     do
     {
         // ask user for the arrays's size
-        printf("Enter the arrays's size : ");
+        printf("Enter the arrays's size ; 1 <= len <= 10 : ");
         scanf("%d", &len);
     } while(len <= 0);
 
