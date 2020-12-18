@@ -26,7 +26,7 @@ int main(void)
     }
     // show the actual values of 1 / 2 array
     printf("Array 1 is : \n");
-    for(i = 0 ; i < 4 ; i++)
+    for(i = 0 ; i < len ; i++)
     {
         printf("%d ", array0[i]);
     }
