@@ -6,9 +6,13 @@ int main(void)
 {
     // declare variables / arrays
     int i, len;
-    // ask user for the arrays's size
-    printf("Enter the arrays's size : ");
-    scanf("%d", &len);
+    do
+    {
+        // ask user for the arrays's size
+        printf("Enter the arrays's size : ");
+        scanf("%d", &len);
+    } while(len <= 0);
+
     int array0[len];
     int array1[len];
     // Ask the user of the values of the two arrays
@@ -58,12 +62,12 @@ int main(void)
 }
 void change(int array0[], int array1[], int same_size)
 {
-    int new, j;
+    int new_variable, j;
     for(j = 0 ; j < same_size ; j++)
     {
-        new = array1[j];
+        new_variable = array1[j];
         array1[j] = array0[j];
-        array0[j] = new_array[j];
+        array0[j] = new_variable;
     }
 
 }
